@@ -1,0 +1,200 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fakei List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&family=Roboto+Serif:opsz@8..144&display=swap"
+    rel="stylesheet">
+</head>
+<link href="./style.css" rel="stylesheet">
+
+<body>
+  <!--NavBar 導覽列1-->
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid shadow-lg">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <h4>i<i class="fa-solid fa-heart" style="color: red;"></i></i>Story&News</h4>
+      <form class="d-flex" id="search-form">
+        <input id="search-input" class="form-control me-2" type="search" placeholder="User Name/Surname"
+          aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div id="navbar-1-collpase" class="bg-light p-4">
+      <h3 class="h4">自己隨手紀錄的小事，也能成為激勵他人的大故事!</h3>
+      <span
+        class="intro-text">網站設計宗旨為透過社會生活時事，記錄您的心情並分享給別人。我們不談政治等敏感話題，只想讓你於平台上輕鬆發表意見，你會發現很多人都有共同的心聲，拉近彼此距離，一起共同成長</span>
+    </div>
+  </div>
+  <!--NavBar 導覽列2-->
+  <nav id="navbar-2" class="navbar navbar-expand-lg d-flex">
+    <div class="container-fluid  shadow-lg">
+      <a class="navbar-brand" href="./index.html">Rafael Social Blog<i class="fa-brands fa-d-and-d mx-1"></i></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ms-2" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="my-favorite" class="nav-link" href="./favorite.html">Favorite List<i
+                class="fa-solid fa-hands-clapping mx-1"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="gender-pic" class="container-fluid  d-flex justify-content-center shadow-lg">
+      <h3>Blogger Gender</h3>
+      <img class="girl mx-4" src="./girls.png" data-id="girl"></img>
+      <img class="boy mx-4" src="./boy.png" data-id="boy"></img>
+    </div>
+
+  </nav>
+  <!--Main informaction -->
+  <container class="row mt-1" id="data-panel">
+    <!--部落客排名區 -->
+    <container id="rank-container" class="col-sm-1 col-md-2 col-lg-3 h-1rem min-vw-40">
+      <ul class="list-group row mx-2 my-3" id="top-hot-likes">
+        <h3>本周熱門部落客 Top-3</h3>
+        <li class="list-group-item mb-2 col-1 like-rank d-flex felx-column" data-id="601">
+          <img class="like-rank-1" src="./gold.png">
+          <img class="user-rank-img" src="https://randomuser.me/api/portraits/men/88.jpg">
+          <p class="name mx-1">Guillaume</p>
+          <i class="far fa-thumbs-up"></i>
+          <p class="likes-times mx-1">7</p>
+          <i class="fa-regular fa-hand-pointer mx-1"></i>
+          <p class="click-times mx-1">10</p>
+        </li>
+        <li class="list-group-item mb-2 col-1 like-rank d-flex felx-column" data-id="602">
+          <img class="like-rank-2" src="./sliver.png">
+          <img class="user-rank-img" src="https://randomuser.me/api/portraits/women/17.jpg">
+          <p class="name mx-1">Vanessa</p>
+          <i class="far fa-thumbs-up"></i>
+          <p class="likes-times mx-1">5</p>
+          <i class="fa-regular fa-hand-pointer mx-1"></i>
+          <p class="click-times mx-1">7</p>
+        </li>
+        <li class="list-group-item mb-2 col-1 like-rank d-flex felx-column" data-id="603">
+          <img class="like-rank-3" src="./bronze.png">
+          <img class="user-rank-img" src="https://randomuser.me/api/portraits/men/4.jpg">
+          <p class="name mx-1">Zbigniew</p>
+          <i class="far fa-thumbs-up"></i>
+          <p class="likes-times mx-1">3</p>
+          <i class="fa-regular fa-hand-pointer mx-1"></i>
+          <p class="click-times mx-1">5</p>
+        </li>
+      </ul>
+    </container>
+
+    <container id="user-list-zone" class="col-sm-11 col-md-10 col-lg-9 row flex-wrap justify-content-evenly mt-3">
+      <!--指定user slide 成員卡片區-->
+    </container>
+  </container>
+  <!--Page 分頁器-->
+  <nav aria-label="Page navigation example shadow-lg">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" data-id="pre" aria-label="Previous">
+          Pre
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#" data-id="next" aria-label="Next">
+          Next
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!--footer區 -->
+  <footer class="p-5 text-white">
+    <div class="div container">
+      <h2 class="dispaly-4 text-center">"與作者交流，您的回饋是我的最大動力"</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <h4>很高興在AlphaCamp認識您</h4>
+          <h2 class="h4"><strong>我的聯絡方式</strong></h2>
+          <ul class="list-unstyled">
+            <li><i class="fa-regular fa-envelope"></i> yhosutun2491@gmail.com</a></li>
+            <li><i class="fa-solid fa-phone"></i></i> 0903741568</li>
+          </ul>
+          <h2 class="h4"><strong>社群關注</strong></h2>
+          <ul class="list-unstyled">
+            <li><i class="fa-brands fa-line"></i> rafaelH123</a></li>
+            <li><i class="fa-brands fa-facebook"></i> rafaelhuang</li>
+          </ul>
+        </div>
+        <form class="col-md-6">
+          <div class="row">
+            <div class="col-md-5">
+              <label for="inputName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-5">
+              <label for="inputFamiliyName" class="form-label">Family Name</label>
+              <input type="text" class="form-control" id="inputFamiliyName">
+            </div>
+            <div class="col-12">
+              <label for="inputEmail" class="form-label">Email (讓作者能夠感謝您，將妥善保存個資，不作商業用途)</label>
+              <input type="text" class="form-control" id="inputEmail" placeholder="Example@gmail.com">
+            </div>
+            <div class="col-12">
+              <label for="writeopinion" class="form-label">Opinion</label>
+              <textarea class="form-control" id="writeopinion" rows="3" placeholder="希望你能持續堅持下去"></textarea>
+            </div>
+            <div class="col-12 mt-3">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <!--User Modal -->
+  <div class="modal fade " id="user-modal-img" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="user-modal-name"><strong>Name</strong></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li id="modal-region"></li>
+            <li id="modal-email">Email: <a class="email" href="#"></a></li>
+            <li id="modal-birthday"></li>
+            <li id="modal-age"></li>
+            <li id="modal-gender"></li>
+          </ul>
+        </div>
+        <div class="modal-footer d-felx  justify-content-between">
+          <span id="modal-update"></span>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--載入axios JS-->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!--載入bootstramp JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+* {
+  font-family: 'Josefin Sans', sans-serif
+}
+
+.user-img-main {
+  width: 60%;
+  position: relative;
+  border-radius: 50%;
+  top: -10px;
+}
+
+#search-form {
+  position: relative;
+  right: 5%;
+}
+
+#navbar-1-collpase {
+  background-image: url(./insist.jpg);
+  height: 300px;
+}
+
+#navbar-1-collpase h3 {
+  font-size: 25px;
+  color: white;
+  font-size: bold;
+}
+
+#navbar-1-collpase .intro-text {
+  font-size: 25px;
+  color: white;
+  font-size: bold;
+}
+
+#navbar-2 {
+  background: linear-gradient(180deg, rgb(212, 236, 180), rgb(119, 152, 216));
+}
+
+#navbar-2 a {
+  font-size: 25px;
+}
+
+.navbar-brand {
+  border: dashed;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#my-favorite:hover {
+  transform: scale(1.1);
+  border-radius: 25px;
+  background: linear-gradient(45deg, red, yellow);
+}
+
+#gender-pic img {
+  width: 60px;
+  height: 60px;
+  cursor: grab;
+}
+
+#gender-pic img:active {
+  transform: scale(1.4);
+}
+
+#data-panel {
+  background: linear-gradient(180deg, rgb(42, 176, 132), rgb(94, 120, 173));
+  background-size: cover;
+  background-position: center center;
+}
+
+.personal-block {
+  height: 230px;
+  opacity: 0.9;
+  border: 2px rgb(89, 72, 90) solid;
+  border-radius: 10%;
+  margin-right: 10px;
+  background: linear-gradient(to left top, #9adfcb, #717170);
+  min-width: 150px;
+  max-width: 280px;
+}
+
+.personal-block:hover {
+  position: relative;
+  top: -10px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.card-footer {
+  max-width: 280px;
+  min-width: 150px;
+  border-radius: 50%;
+}
+
+
+
+.card-footer:hover {
+  background: linear-gradient(180deg, rgb(175, 177, 34), rgb(184, 128, 115));
+}
+
+.list-group h3 {
+  color: azure;
+}
+
+.list-group-item img {
+  min-width: 40px;
+  max-width: 60px;
+  min-height: 40px;
+  max-height: 60px;
+}
+
+.list-group-item p {
+  font-size: 25px;
+}
+
+.list-group li {
+  background: linear-gradient(135deg, #82bd5e, #808538);
+  border-radius: 2%;
+  box-shadow: 8px 8px 5px grey;
+}
+
+.list-group-item i {
+  max-width: 70px;
+  font-size: 25px;
+}
+
+#rank-container {
+  min-width: 300px;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 1440px) {
+  .list-group-item {
+    font-size: 15px;
+  }
+
+  .list-group-item p {
+    font-size: 13px;
+  }
+
+  .list-group h3 {
+    color: azure;
+    font-size: 20px;
+  }
+
+  .card-footer span {
+    font-size: 13px;
+  }
+}
+
+
+.page-link:hover {
+  position: relative;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  right: 10%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background: yellowgreen;
+}
+
+.fa-solid {
+  color: red;
+}
+
+i {
+  cursor: grab;
+}
+
+.fa-thumbs-up:active {
+  position: relative;
+  top: -10px;
+  left: 10px;
+  color: blue;
+  transform: sacle(3);
+}
+
+.fa-thumbs-up:active::after {
+  content: "+1";
+  font-size: 15px;
+  position: absolute;
+}
+
+.fa-thumbs-up:hover {
+  animation: scaleMove 0.5s ease 0.2s infinite;
+}
+
+.fa-heart:hover {
+  animation: scaleMove 0.5s ease 0.2s infinite;
+}
+
+@keyframes scaleMove {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+
+}
+
+.pagination {
+  background-color: #e0ee91;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.pagination a {
+  background-color: rgb(220, 224, 180);
+  border-radius: 5px;
+}
+
+
+.data-panel {
+  height: 80vh;
+}
+
+footer {
+  height: 450px;
+  background: linear-gradient(180deg, #b775d5, #4b516e);
+}
+
+footer li {
+  font-size: 25px;
+}
+
+.list-group-item .far {
+  animation: none;
+}
+
+.far:active::after {
+  content: "";
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  position: absolute;
+
+}
+
+.far:active {
+  position: relative;
+  color: black;
+  top: 0px;
+  left: 0px;
+}
+
+.modal-content {
+  font-size: 24px;
+  font-weight: bold;
+  background-image: url(./modal.jpg);
+  font-family: 'Josefin Sans', sans-serif;
+}

@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fakei List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+</head>
+<link href="./favorite.css" rel="stylesheet">
+
+<body>
+  <!--NavBar 導覽列1-->
+  <nav id="navbar-1" class="navbar navbar-expand-lg navbar-light bg-light shadow-sm shadow-lg shadow-md">
+    <div class="container-fluid d-flex flex-row">
+      <div class="home d-flex">
+        <a class="navbar-brand" href="#">Your Favorite Members</a>
+        <a id="go-home" class="nav-link" href="./index.html">HOME<i class="fa-solid fa-hands-clapping mx-1"></i></a>
+      </div>
+      <div class="search" id="navbarNav">
+        <form class="d-flex" id="search-form">
+          <input id="search-input" class="form-control me-2" type="search" placeholder="User Name" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Main informaction -->
+  <container class="row" id="data-panel">
+    <container id="user-list-zone" class="col-12 row flex-wrap row justify-content-start mt-3 ms-5">
+      <!--指定user slide 成員卡片區-->
+    </container>
+  </container>
+  <!--Page 分頁器-->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          Pre
+        </a>
+      </li>
+      <!--Paginator新增區-->
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          Next
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!--User Modal -->
+  <div class="modal fade " id="user-modal-img" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="user-modal-name">Name</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li id="modal-region"></li>
+            <li id="modal-email">Email: <a class="email" href="#"></a></li>
+            <li id="modal-birthday"></li>
+            <li id="modal-age"></li>
+          </ul>
+        </div>
+        <div class="modal-footer d-felx  justify-content-between">
+          <span id="modal-update"></span>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--載入axios JS-->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!--載入bootstramp JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./favorite.js"></script>
+</body>
+
+</html>
