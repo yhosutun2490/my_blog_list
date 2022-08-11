@@ -12,7 +12,7 @@ Type the names or surmanes of the users in search bar
 - In index page, press the **love button** on the userlist to add it into favorite list
 - You can checkout the favorite list in `favorite.html`
 - If you want to remove the users from favorite list,just press **heart-broken** button.
-- You can also press the **love button** to remove it from favorite list
+- You can also press the **love button** to remove it from favorite list in `index.html`
 - If you liked the User informations, press the **thumb-up button** to add its likes times.
 ### Ranking your personal liked users
 - When you change the pages o reloading your browser, the right side will show you the Top-3 users that you clicked most times
